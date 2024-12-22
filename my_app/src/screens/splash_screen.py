@@ -8,7 +8,7 @@ import os
 # - bgcolor: สีพื้นหลังของหน้าจอ (ค่าเริ่มต้น: ft.colors.WHITE)
 def splash_screen(page: ft.Page, title="Splash Screen", bgcolor=ft.colors.WHITE):
     page.title = title  # ตั้งชื่อหน้าจอ
-    page.padding = 1  # ตั้งค่าขอบ Padding ของหน้าจอ
+    page.padding = 0  # ตั้งค่าขอบ Padding ของหน้าจอ
     page.bgcolor = bgcolor  # ตั้งค่าสีพื้นหลังของหน้าจอ
 
     # เส้นทางไปยังโลโก้
@@ -19,8 +19,8 @@ def splash_screen(page: ft.Page, title="Splash Screen", bgcolor=ft.colors.WHITE)
     # องค์ประกอบภาพโลโก้
     logo = ft.Image(
         src=logo_path,  # เส้นทางโลโก้
-        width=150,  # ความกว้างของภาพ
-        height=150,  # ความสูงของภาพ
+        width=200,  # ความกว้างของภาพ
+        height=200,  # ความสูงของภาพ
         fit=ft.ImageFit.CONTAIN  # การจัดขนาดภาพให้พอดีกับพื้นที่
     )
 
